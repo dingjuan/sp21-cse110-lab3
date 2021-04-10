@@ -68,11 +68,11 @@
                 </textarea><br><br>
                 <legend style="color: rgb(137, 192, 224)">Info:</legend>
                 <label for="fname" style = "margin-top: 35px; color: blanchedalmond;">First name:</label>
-                <input type="text" name="fname"><br><br>
+                <input id= "fname" type="text" name="fname"><br><br>
                 <label for="lname" style = "margin-top: 15px; color: blanchedalmond;">Last name:</label>
                 <input type="text" id="lname" name="lname"><br><br>
                 <label for="browser" style = "margin-top: 35px; color: blanchedalmond;">Choose which day you like most:</label>
-                <input list="browsers">
+                <input id = "browser" list="browsers">
                 <datalist id="browsers">
                     <option value="Day 1">
                     <option value="Day 2">
@@ -80,7 +80,5 @@
                 </datalist>
                 <input style = "margin-top: 15px; color: blueviolet; " type="submit" value="Submit">
             </fieldset>
-        </form>
-
     </body>
 </html>
