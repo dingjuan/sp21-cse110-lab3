@@ -1,3 +1,133 @@
+@media only screen and (min-width: 400px) { /* load with all screens with minimum 400px width */
+    body {
+        background: url("background.jpg") no-repeat fixed center;
+    }
+}
+
+@font-face {
+    font-family: customFont;
+    src: url(Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+}
+
+* {
+    font-family: customFont;   /* universal element use font family */
+}
+
+ol {
+    color: rgb(228, 140, 140);
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
 h1 {
-    color: papayawhip;
+    color: peachpuff;  /* all the h1 use this color */
+    margin: auto;
+    position: static;
+}
+
+ul {
+    color:palevioletred; /* all the ul use palevioletred */
+    margin: top;
+    position: relative;
+    margin-left: 1rem;
+}
+
+.flexbox, #gridbox {  /* Selector List  */
+    padding-left: 2rem;
+    margin-right: 2rem;
+}
+
+.flexbox {
+    display: flex;      /* load all items horizontal in class flexbox*/
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    margin-left: 2rem;
+}
+
+#gridbox{               /* load all items vertical in id gridbox*/
+    display: grid;
+    grid-row-gap: 10px;
+    grid-auto-rows: auto;
+    grid-column: 1;
+}
+
+div[class = "flexbox"] {   /* div class with flexbox font size become small*/
+    font-size: small;
+}
+
+div > img {         /* Child Combinator */
+    width: 25px;
+    height: 25px;
+}
+
+h3 {
+    color:rgb(245, 179, 242); /* all the h3 use palevioletred */
+    text-align: justify;
+    font-size: larger;
+    margin-left: 3rem;
+}
+
+section details {      /* Descendant Combinator (element element) */
+    margin-left: 30px;
+    margin-top: 5px;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+    color:blanchedalmond;
+}
+
+img {
+    margin-top: 1em;
+    margin-right: 2px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+img.icon {      /* Combining Two Selectors */
+    width: 25px;
+    height: 25px;
+}
+
+em {
+    color: aquamarine;
+    text-decoration: underline;
+}
+
+form {
+    margin-top: 2em;
+    color: antiquewhite;
+    font-size: large;
+}
+
+fieldset {
+    width: 30em;
+    min-width: 22em;
+    border-color: aquamarine;
+    color: blanchedalmond;
+    border-radius: 5px;
+    border-width: 3px;
+    border-style: double;
+    display: block;
+}
+
+#fname ~ #lname ~ #browser {     /* General sibling combinator only works for the last one*/
+    font-size: small;
+    color: brown;
+    text-align: center;
+}
+
+#fnameLabel + #fname, #lnameLabel + #lname {   /*Adjacent sibling combinator only works for the last one */
+    font-weight: bolder;
+}
+
+footer {
+    color: brown;
+}
+
+a:hover {    /* Pseudo-class Selector */
+    color: #FF00FF;
+}
+  
+a:active {
+    color: blanchedalmond;
 }

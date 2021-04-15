@@ -35,17 +35,19 @@
                 <h3>Monday</h3>
                 <details>
                     <summary>Details</summary>
-                    <div>
-                        <img src="work.png" alt="" width="25" height="25">Finsh the lectures and all the quizs.
-                    </div>
-                    <div>
-                        <img src="food.png" alt="" width="25" height="30"> Indian - <em>Tikka Masala and Green salad</em>, <b class="term">yami~</b>
-                    </div>
-                    <div>
-                        <img src="play.png" alt="" width="25" height="25"> So sad, actually didn't have enough time to play switch - <span><b>Just Dance</b></span>
-                    </div>
-                    <div>
-                        <img src="relax.png" alt="" width="25" height="25"> Fortunatelly, I have a very enjoyable sleep and a beautiful dream~
+                    <div id="gridbox">
+                        <div>
+                            <img class = "icon" src="work.png">  Finsh the lectures and all the quizs.
+                        </div>
+                        <div>
+                            <img class = "icon" src="food.png">  Indian - <em>Tikka Masala and Green salad</em>, <b class="term">yami~</b>
+                        </div>
+                        <div>
+                            <img class = "icon" src="play.png">  So sad, actually didn't have enough time to play switch - <span><b>Just Dance</b></span>
+                        </div>
+                        <div>
+                            <img class = "icon" src="relax.png">  Fortunatelly, I have a very enjoyable sleep and a beautiful dream~
+                        </div>
                     </div>
                 </details>
             </section>
@@ -58,17 +60,19 @@
                 <h3>Thuesday</h3>
                 <details>
                     <summary>Details</summary>
-                    <div>
-                        <img src="work.png" alt="" width="25" height="25"> Enrolled in two new classes, workload has been too much, hope I can handle them well.
-                    </div>
-                    <div>
-                        <img src="food.png" alt="" width="25" height="30"> Chinese - <em>sweet fried chicken and tofu soup</em> - <strong>cooked by myslef!</strong>
-                    </div>
-                    <div>
-                        <img src="play.png" alt="" width="25" height="25"> Watched "Godzilla vs. Kong" on HBO at home, hope next time we can watch it in the cinema
-                    </div>
-                    <div>
-                        <img src="relax.png" alt="" width="25" height="25"> So luck to have a sweet dream, wouldn't it be more wonderful if we are all in the dream instead of the sad reality
+                    <div class="gridbox">
+                        <div>
+                            <img src="work.png" alt="">  Enrolled in two new classes, workload has been too much, hope I can handle them well.
+                        </div>
+                        <div>
+                            <img src="food.png" alt="">  Chinese - <em>sweet fried chicken and tofu soup</em> - <strong>cooked by myslef!</strong>
+                        </div>
+                        <div>
+                            <img src="play.png" alt="">  Watched "Godzilla vs. Kong" on HBO at home, hope next time we can watch it in the cinema
+                        </div>
+                        <div>
+                            <img src="relax.png" alt="">  So luck to have a sweet dream, wouldn't it be more wonderful if we are all in the dream instead of the sad reality
+                        </div>
                     </div>
                 </details>
             </section>
@@ -81,17 +85,19 @@
                 <h3>Wenseday</h3>
                 <details>
                     <summary>Details</summary>
-                    <div>
-                        <img src="work.png" alt="" width="25" height="25"> Although tried my best, still have 3 more assignment need to do <i>:(</i>
-                    </div>
-                    <div>
-                        <img src="food.png" alt="" width="25" height="30"> Japanese - <em>Sushi and pork rammen</em>
-                    </div>
-                    <div>
-                        <img src="play.png" alt="" width="25" height="25"> It has been a long time that I can go out to have a deep breath. I miss the beach and the shopping~
-                    </div>
-                    <div>
-                        <img src="relax.png" alt="" width="25" height="25"> A little bit tired even already sleep for 8 hours.
+                    <div class="flexbox">
+                        <div>
+                            <img src="work.png" alt="" width="25" height="25">  Although tried my best, still have 3 more assignment need to do <i>:(</i>
+                        </div>
+                        <div>
+                            <img src="food.png" alt="" width="25" height="30">  Japanese - <em>Sushi and pork rammen</em>
+                        </div>
+                        <div>
+                            <img src="play.png" alt="" width="25" height="25">  It has been a long time that I can go out to have a deep breath. I miss the beach and the shopping~
+                        </div>
+                        <div>
+                            <img src="relax.png" alt="" width="25" height="25">  A little bit tired even already sleep for 8 hours.
+                        </div>
                     </div>
                 </details>
             </section>
@@ -101,9 +107,9 @@
                 <legend>Info:</legend>
                 <textarea rows="3" cols="50">Welcome to my site. I'm a such boring person, hope you have a good day!
                 </textarea><br><br>
-                <label for="fname">First name:</label>
+                <label id= "fnameLabel" for="fname">First name:</label>
                 <input id= "fname" type="text" name="fname"><br><br>
-                <label for="lname">Last name:</label>
+                <label id= "lnameLabel" for="lname">Last name:</label>
                 <input type="text" id="lname" name="lname"><br><br>
                 <label for="browser">Choose which day you like most:</label>
                 <input id = "browser" list="browsers">
